@@ -1,0 +1,91 @@
+@font-face {
+  font-family: TradeGothicLTCom-BdCn20;
+  src: url(../fonts/Trade-Gothic-LT-Com-Bold-Condensed-No--20.ttf); }
+
+body {
+  font-family: TradeGothicLTCom,Helvetica,Arial,sans-serif;
+  font-size: 1em; }
+
+header {
+  display: table;
+  width: 100%;
+  height: 60px; }
+
+.header-logo {
+  display: table-cell;
+  background: url(../images/logo-ni.svg) no-repeat;
+  background-size: 196px 30px;
+  width: 196px;
+  height: 30px; }
+
+@media screen and (min-width: 768px) {
+  .header-navi {
+    display: table-cell; } }
+
+.header-navi {
+  text-align: center; }
+  .header-navi li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 50px; }
+  .header-navi a {
+    color: #303030;
+    font-size: 1.125em;
+    font-family: TradeGothicLTCom-BdCn20,Helvetica,Arial,sans-serif; }
+
+.header-icons a.account {
+  background: url(../images/icon-account.svg) no-repeat; }
+
+.header-icons a.cart {
+  background: url(../images/) no-repeat; }
+
+.header-icons a.search {
+  background: url(../images/icon-search.svg) no-repeat; }
+
+.guitar-rig-pro {
+  background: url(../images/img-welcome-hero-guitar-rig-5-pro.jpg) no-repeat;
+  width: 100%;
+  height: 500px; }
+
+.content-header {
+  background-color: orange;
+  height: 50px; }
+
+.content {
+  background-color: lime;
+  height: 50px; }
+
+.perfect-custom-tone {
+  background-color: gray;
+  height: 50px; }
+
+.perfect-custom-tone-gallery {
+  height: 50px; }
+
+.computer-image {
+  background-color: gray;
+  height: 50px; }
+
+.cabinets {
+  height: 50px; }
+
+.effect-rack {
+  background-color: gray;
+  height: 50px; }
+
+.complete-control {
+  height: 50px; }
+
+.free-guitar-rig {
+  background-color: gray;
+  height: 50px; }
+
+.related-products {
+  height: 50px; }
+
+.social-button-container {
+  background-color: gray;
+  height: 50px; }
+
+.footer {
+  height: 50px; }
