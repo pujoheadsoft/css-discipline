@@ -3,9 +3,22 @@
     src: url(../fonts/Trade-Gothic-LT-Com-Bold-Condensed-No--20.ttf)
 }
 
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
 body {
     font-family: TradeGothicLTCom,Helvetica,Arial,sans-serif;
     font-size: 1em;
+}
+
+h1 {
+    font-family: TradeGothicLTCom-BdCn20,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .01em;
 }
 
 header {
@@ -64,12 +77,42 @@ header {
 }
 
 .content-header {
-    background-color: orange;
-    height: 50px;
+    background-color: #2a2e2c;
+    color: #f5f5f5;
+    height: 60px;
+    display: flex;
+    .name-container {
+        h1 {
+            margin: 0px;
+        }
+    }
+    .navi-container {
+       
+    }
+    .price-button-container {
+        margin-left: auto;
+        display: flex;
+        .price-container {
+            
+        }
+        .button-container {
+            
+        }
+    }
+    ul {
+        list-style: none;
+        li {
+            display: inline-block;
+            font-family: TradeGothicLTCom,Helvetica,Arial,sans-serif;
+            margin-left: 5px;
+            margin-right: 5px;
+            text-align: left;
+        }
+    }
 }
 
 .content {
-    background-color: lime;
+    background-color: #f5f5f5;
     height: 50px;
 }
 
