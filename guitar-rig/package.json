@@ -9,6 +9,8 @@
   },
   "devDependencies": {
     "node-sass": "^4.7.2",
-    "scss-compile": "^0.1.7"
+    "scss-compile": "^0.1.7",
+    "stylelint": "^8.4.0",
+    "stylelint-config-standard": "^18.0.0"
   }
 }
