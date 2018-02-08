@@ -21,6 +21,10 @@ h1 {
   letter-spacing: .01em;
 }
 
+ul {
+  list-style: none;
+}
+
 header {
   display: table;
   width: 100%;
@@ -61,18 +65,19 @@ header {
 
 .header-icons {
   a.account {
-	background: url(../images/icon-account.svg) no-repeat;
+	  background: url(../images/icon-account.svg) no-repeat;
   }
   a.cart {
     background: url(../images/) no-repeat;
   }
   a.search {
-	background: url(../images/icon-search.svg) no-repeat;
+	  background: url(../images/icon-search.svg) no-repeat;
   }
 }
 
 .guitar-rig-pro {
   background: url(../images/img-welcome-hero-guitar-rig-5-pro.jpg) no-repeat;
+  background-size: 100%;
   width: 100%;
   height: 500px;
 }
@@ -112,7 +117,7 @@ header {
   }
 }
 
-.content {
+.perfect-custom-tone {
   background-color: #f5f5f5;
 
   .container {
@@ -121,49 +126,46 @@ header {
   }
 }
 
-.perfect-custom-tone {
-  background-color: gray;
+.perfect-custom-tone-gallery {
 
 }
 
-.perfect-custom-tone-gallery {
+.computer-image {
   background: url(../images/crop-left-guitar-rig.jpg) no-repeat;
   background-size: 100% auto;
   color: #f5f5f5;
 }
 
-.computer-image {
-  background-color: gray;
-  height: 50px;
-}
-
 .cabinets {
-  height: 50px;
+
 }
 
 .effect-rack {
-  background-color: gray;
-  height: 50px;
+  background: url(../images/effect_rack.jpg) no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  color: #f5f5f5;
 }
 
 .complete-control {
-  height: 50px;
+ 
 }
 
 .free-guitar-rig {
   background-color: gray;
-  height: 50px;
+  
 }
 
 .related-products {
-  height: 50px;
+
 }
 
 .social-button-container {
   background-color: gray;
-  height: 50px;
 }
 
 .footer {
-  height: 50px;
+  background-color: #2a2e2c;
+  color: #f5f5f5;
 }
