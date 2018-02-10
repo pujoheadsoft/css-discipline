@@ -8,87 +8,277 @@
   box-sizing: border-box; }
 
 body {
-  font-family: TradeGothicLTCom,Helvetica,Arial,sans-serif;
-  font-size: 1em; }
+  font-family: TradeGothicLTCom, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 0; }
 
 h1 {
-  font-family: TradeGothicLTCom-BdCn20,Helvetica,Arial,sans-serif;
+  font-family: TradeGothicLTCom-BdCn20, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
-  letter-spacing: .01em; }
-
-ul {
-  list-style: none; }
-
-header {
-  display: table;
-  width: 100%;
-  height: 60px; }
+  letter-spacing: 0.01em; }
 
 .flexbox {
   display: flex; }
 
-.header-logo {
-  display: table-cell;
-  background: url(../images/logo-ni.svg) no-repeat;
-  background-size: 196px 30px;
-  width: 196px;
-  height: 30px; }
+.centeringed-vertical-parent {
+  position: relative; }
 
-@media screen and (min-width: 768px) {
-  .header-navi {
-    display: table-cell; } }
+.centeringed-vertical-child {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
 
-.header-navi {
-  text-align: center; }
-  .header-navi li {
-    display: inline-block;
-    list-style: none;
-    margin-right: 50px; }
-  .header-navi a {
-    color: #303030;
-    font-size: 1.125em;
-    font-family: TradeGothicLTCom-BdCn20,Helvetica,Arial,sans-serif; }
+.zero {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto; }
 
-.header-icons a.account {
-  background: url(../images/icon-account.svg) no-repeat; }
-
-.header-icons a.cart {
-  background: url(../images/) no-repeat; }
-
-.header-icons a.search {
-  background: url(../images/icon-search.svg) no-repeat; }
+header {
+  display: table;
+  width: 100%;
+  height: 60px;
+  position: relative; }
+  header .header-logo-container {
+    display: table-cell;
+    vertical-align: middle;
+    width: 500px;
+    padding-left: 35px; }
+    header .header-logo-container .header-logo {
+      display: block;
+      background: url(../images/logo-ni.svg) no-repeat;
+      background-size: 196px 30px;
+      width: 196px;
+      height: 30px; }
+  header .header-navi {
+    display: table-cell;
+    text-align: center;
+    vertical-align: bottom;
+    line-height: 1;
+    padding: 0; }
+    header .header-navi li {
+      display: inline-block;
+      list-style: none;
+      line-height: 3.1; }
+      header .header-navi li a {
+        position: relative;
+        font-size: 1.125rem;
+        color: #303030;
+        margin: 0 7px;
+        padding: 0;
+        width: 100%;
+        line-height: 2.75;
+        letter-spacing: 0.02em;
+        font-family: TradeGothicLTCom-BdCn20, Helvetica Arial, sans-serif; }
+      header .header-navi li a.active + span.border {
+        background: #555; }
+      header .header-navi li a:hover + .border {
+        background: #555; }
+      header .header-navi li .border {
+        display: block;
+        background: transparent;
+        height: 4px; }
+      header .header-navi li .border.active {
+        background: #555; }
+    header .header-navi li:not(:last-child) {
+      margin-right: 50px; }
+  header .header-icons {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+    width: 500px;
+    padding: 0 25px 0 0; }
+    header .header-icons a {
+      position: relative;
+      font-size: 1em;
+      line-height: 1.5;
+      padding: 10px 15px; }
 
 .guitar-rig-pro {
-  background: url(../images/img-welcome-hero-guitar-rig-5-pro.jpg) no-repeat;
-  background-size: 100%;
-  width: 100%;
-  height: 500px; }
+  position: relative;
+  width: 100%; }
+  .guitar-rig-pro img {
+    position: relative;
+    width: 100%; }
+  .guitar-rig-pro .guitar-rig-logo {
+    position: absolute;
+    width: 70%;
+    max-width: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .guitar-rig-pro .guitar-rig-logo svg {
+      display: block;
+      width: 100%;
+      height: 100%; }
 
 .content-header {
+  display: table;
   background-color: #2a2e2c;
   color: #f5f5f5;
-  height: 60px;
-  display: flex; }
-  .content-header .name-container h1 {
-    margin: 0px; }
+  width: 100%;
+  height: 60px; }
+  .content-header .name-container {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 20px 0 35px;
+    white-space: nowrap;
+    width: 300px; }
+    .content-header .name-container h1 {
+      font-size: 1.875rem;
+      line-height: 1.3;
+      letter-spacing: 0.05em;
+      margin: 0; }
+  .content-header .navi-container {
+    display: table-cell;
+    vertical-align: bottom;
+    padding: 0;
+    text-align: left; }
+    .content-header .navi-container ul {
+      font-family: TradeGothicLTCom, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-size: 0.875rem;
+      font-weight: 400;
+      font-style: normal;
+      white-space: nowrap;
+      position: relative;
+      width: 100%;
+      padding: 0;
+      margin: 0; }
+      .content-header .navi-container ul li {
+        display: inline-block;
+        line-height: 3.5;
+        margin-right: 5px;
+        margin-left: 5px;
+        text-align: left; }
+        .content-header .navi-container ul li a {
+          margin-top: 0;
+          padding: 0 8px;
+          font-family: TradeGothicLTCom, Helvetica, Arial, sans-serif;
+          font-size: 0.875rem;
+          font-weight: 400;
+          white-space: nowrap;
+          letter-spacing: 0.02em; }
+        .content-header .navi-container ul li .border {
+          display: block;
+          background-color: transparent;
+          height: 4px; }
+        .content-header .navi-container ul li a:hover + .border {
+          background-color: #555; }
   .content-header .price-button-container {
-    margin-left: auto;
-    display: flex; }
-  .content-header ul {
-    list-style: none; }
-    .content-header ul li {
-      display: inline-block;
-      font-family: TradeGothicLTCom,Helvetica,Arial,sans-serif;
-      margin-left: 5px;
-      margin-right: 5px;
-      text-align: left; }
+    display: table-cell;
+    width: 100px;
+    vertical-align: middle;
+    text-align: right;
+    padding-right: 35px;
+    padding-left: 20px; }
+    .content-header .price-button-container > div {
+      display: table; }
+    .content-header .price-button-container .price-container {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 1rem;
+      line-height: 20px;
+      padding-right: 20px; }
+      .content-header .price-button-container .price-container > div {
+        display: table; }
+      .content-header .price-button-container .price-container .update {
+        font-size: 13px; }
+    .content-header .price-button-container .button-container {
+      display: table-cell;
+      vertical-align: middle;
+      white-space: nowrap; }
+      .content-header .price-button-container .button-container > div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center; }
+      .content-header .price-button-container .button-container a {
+        background-color: #666872;
+        padding: 6px 14px;
+        margin-right: 8px; }
+        .content-header .price-button-container .button-container a span {
+          font-family: TradeGothicLTCom, Helvetica, Arial, sans-serif;
+          font-weight: 400;
+          line-height: 1.3; }
 
 .perfect-custom-tone {
-  background-color: #f5f5f5; }
+  background-color: #fff; }
   .perfect-custom-tone .container {
     display: flex;
-    justify-content: space-around; }
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 100px; }
+    .perfect-custom-tone .container h1 {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      margin: 0 0 20px; }
+    .perfect-custom-tone .container ul {
+      list-style: none;
+      padding: 0;
+      margin: 0; }
+      .perfect-custom-tone .container ul li {
+        position: relative;
+        font-size: 22px;
+        color: #666;
+        margin: 0;
+        padding: 10px 0 10px 20px;
+        font-style: italic;
+        list-style: none;
+        font-family: TradeGothicLTCom-Cn18, Helvetica, Arial, sans-serif; }
+      .perfect-custom-tone .container ul li::before {
+        display: inline-block;
+        position: absolute;
+        top: 24px;
+        left: 5px;
+        height: 12px;
+        width: 7px;
+        content: "";
+        background-image: url(./images/arrow-right.svg);
+        background-repeat: no-repeat;
+        background-size: 100%; }
+    .perfect-custom-tone .container .play {
+      padding-top: 30px; }
+      .perfect-custom-tone .container .play .media {
+        margin-bottom: 20px; }
+        .perfect-custom-tone .container .play .media a {
+          display: table; }
+        .perfect-custom-tone .container .play .media .text {
+          display: table-cell;
+          vertical-align: middle;
+          padding-left: 10px;
+          font-size: 16px;
+          font-size: 1rem; }
+        .perfect-custom-tone .container .play .media .icon {
+          width: 50px;
+          height: 50px; }
+        .perfect-custom-tone .container .play .media .movie {
+          display: table-cell;
+          background: url(../images/arrow-right2.svg) no-repeat;
+          background-size: 50px 50px; }
+        .perfect-custom-tone .container .play .media .audio {
+          display: table-cell;
+          background: url(../images/play.svg) no-repeat;
+          background-size: 50px 50px; }
+
+.perfect-custom-tone-gallery {
+  color: #222;
+  background: #eee; }
+  .perfect-custom-tone-gallery .text-container {
+    width: 100%;
+    max-width: 930px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center; }
+    .perfect-custom-tone-gallery .text-container h2 {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      margin: 0 0 20px;
+      font-family: TradeGothicLTCom-BdCn20, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: 0.01em; }
 
 .computer-image {
   background: url(../images/crop-left-guitar-rig.jpg) no-repeat;
