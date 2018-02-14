@@ -1,18 +1,4 @@
-@font-face {
-  font-family: TradeGothicLTCom-BdCn20;
-  src: url(../fonts/Trade-Gothic-LT-Com-Bold-Condensed-No--20.ttf); }
-
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-body {
-  font-family: TradeGothicLTCom, Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  margin: 0;
-  padding: 0; }
-
+@import url(*.css);
 h1 {
   font-family: TradeGothicLTCom-BdCn20, Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -289,11 +275,6 @@ header {
       line-height: 1.8; }
   .perfect-custom-tone-gallery img {
     margin-top: 40px; }
-
-.computer-image {
-  background: url(../images/crop-left-guitar-rig.jpg) no-repeat;
-  background-size: 100% auto;
-  color: #f5f5f5; }
 
 .effect-rack {
   background: url(../images/effect_rack.jpg) no-repeat;

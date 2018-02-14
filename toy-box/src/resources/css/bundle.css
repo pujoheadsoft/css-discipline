@@ -1,0 +1,17 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+div {
+  color: white;
+}
+
+body {
+  background: blue;
+}
+
+.parent .child {
+  width: 100px;
+}
