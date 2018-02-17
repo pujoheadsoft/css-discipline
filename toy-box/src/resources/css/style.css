@@ -1,7 +1,5 @@
-@import "common";
+@import "./components/*.css";
 
 body {
     background: #555;
 }
-
-
