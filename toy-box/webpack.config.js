@@ -28,6 +28,16 @@ module.exports = {
       {
         test: /\.html$/,
         loader: "html-loader"
+      },
+      {
+        test: /\.(jpe?g|png|svg|gif)$/,
+        use: {
+          loader: "url-loader",
+          options: {
+            limit: 8192,
+            name: "./images/[name].[ext]"
+          }
+        }
       }
     ]
   },

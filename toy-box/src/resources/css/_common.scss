@@ -19,3 +19,18 @@ ul {
 	color: #999999;
     }
 }
+
+.cat {
+    text-align: center;
+    margin-left: 500px;
+    margin-right: 500px;
+
+    .desc {
+        font-size: 3em;
+        margin-bottom: 30px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
