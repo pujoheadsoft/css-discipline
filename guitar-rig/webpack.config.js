@@ -8,8 +8,8 @@ module.exports = {
     style: "./resources/css/style.js"
   },
   output: {
-    path: path.join(__dirname, "css"),
-    filename: "resources/css/bundle.css"
+    path: path.join(__dirname, "public"),
+    filename: "./resources/css/bundle.css"
   },
   devServer: {
     contentBase: path.join(__dirname, "src"),
