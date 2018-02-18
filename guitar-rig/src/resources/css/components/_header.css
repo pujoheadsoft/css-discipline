@@ -1,0 +1,84 @@
+header {
+  display: table;
+  width: 100%;
+  height: 60px;
+  position: relative;
+
+  .header-logo-container {
+    display: table-cell;
+    vertical-align: middle;
+    width: 500px;
+    padding-left: 35px;
+
+    .header-logo {
+      display: block;
+      background: url(../images/logo-ni.svg) no-repeat;
+      background-size: 196px 30px;
+      width: 196px;
+      height: 30px;
+    }
+  }
+
+  .header-navi {
+    display: table-cell;
+    text-align: center;
+    vertical-align: bottom;
+    line-height: 1;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      list-style: none;
+      line-height: 3.1;
+
+      a {
+        position: relative;
+        font-size: 1.125rem;
+        color: #303030;
+        margin: 0 7px;
+        padding: 0;
+        width: 100%;
+        line-height: 2.75;
+        letter-spacing: 0.02em;
+        font-family: TradeGothicLTCom-BdCn20, Helvetica Arial, sans-serif;
+      }
+
+      a.active + span.border {
+        background: #555;
+      }
+
+      a:hover + .border {
+        background: #555;
+      }
+
+      .border {
+        display: block;
+        background: transparent;
+        height: 4px;
+      }
+
+      .border.active {
+        background: #555;
+      }
+    }
+
+    li:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  .header-icons {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+    width: 500px;
+    padding: 0 20px 0 0;
+
+    a {
+      position: relative;
+      font-size: 1em;
+      line-height: 1.5;
+      padding: 10px 15px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.the-gold-standard-for-guitar-and-bass {
+  color: #f5f5f5;
+
+  .image-container {
+    background: url(../images/crop-left-guitar-rig.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 20%;
+    margin-left: auto;
+    width: 570px;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin: 0 0 20px;
+  }
+}

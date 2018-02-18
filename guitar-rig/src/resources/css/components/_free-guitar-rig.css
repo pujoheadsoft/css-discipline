@@ -1,0 +1,28 @@
+.free-guitar-rig {
+  color: #222;
+
+  .container {
+    display: flex;
+    justify-content: center;
+
+    .text-container {
+      width: 520px;
+      margin-right: 50px;
+    }
+
+    .image-container {
+      width: 520px;
+      margin-left: 50px;
+    }
+  }
+
+  .description {
+    margin-bottom: 39px;
+  }
+
+  .button {
+    background-color: #222;
+    border-color: #222;
+    color: #f5f5f5;
+  }
+}

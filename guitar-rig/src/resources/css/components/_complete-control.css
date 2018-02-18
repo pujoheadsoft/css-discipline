@@ -1,0 +1,27 @@
+.complete-control {
+  text-align: center;
+  color: #222;
+  background-color: #eee;
+
+  .container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .description {
+    margin-bottom: 39px;
+  }
+
+  .button {
+    background-color: #222;
+    border-color: #222;
+    color: #f5f5f5;
+  }
+
+  .image-container {
+      margin-top: 55px;
+  }
+}

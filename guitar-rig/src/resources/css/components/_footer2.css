@@ -1,0 +1,16 @@
+.footer2 {
+  padding: 10px 0;
+  background: #333;
+  color: #666;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  a {
+    color: #666;
+  }
+}

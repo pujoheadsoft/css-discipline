@@ -1,4 +1,14 @@
 @font-face {
   font-family: TradeGothicLTCom-BdCn20;
-  src: url(../fonts/Trade-Gothic-LT-Com-Bold-Condensed-No--20.ttf);
+  src: url(../fonts/TradeGothicLTCom-BdCn20.woff);
+}
+
+@font-face {
+  font-family: TradeGothicLTCom;
+  src: url(../fonts/TradeGothicLTCom.woff);
+}
+
+@font-face {
+  font-family: TradeGothicLTCom-Cn18;
+  src: url(../fonts/TradeGothicLTCom-Cn18.woff);
 }
