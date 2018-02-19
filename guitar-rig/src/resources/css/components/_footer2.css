@@ -8,6 +8,19 @@
     justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px;
+
+    .column1 {
+      width: 25%;
+    }
+
+    .column2 {
+
+    }
+
+    .column3 {
+      width: 30%;
+      text-align: right;
+    }
   }
 
   a {

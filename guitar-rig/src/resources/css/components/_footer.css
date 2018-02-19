@@ -1,28 +1,31 @@
 .footer {
-  background-color: #2a2e2c;
+  background-color: #2A2C2E;
   color: #f5f5f5;
   padding-top: 40px;
-  padding-bottom: 60px;
+  padding-bottom: 70px;
 
   .shop-service-container {
-    width: 380px;
+    width: 33.33333%;
     padding-left: 15px;
     padding-right: 30px;
   }
 
   .connect-container {
-    width: 475px;
+    width: 41.66667%;
     padding: 0 30px;
   }
 
   .company-container {
-    width: 300px;
+    width: 25%;
     padding: 0 30px;
   }
 
   .container {
     display: flex;
     justify-content: center;
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
 
     .headline {
       margin: 0 0 5px;
@@ -37,6 +40,7 @@
       line-height: 2em;
       color: #f5f5f5;
       font-family: TradeGothicLTCom-BdCn20, Helvetica, Arial, sans-serif;
+      letter-spacing: 0.001em;
     }
 
     .freeshipping {
@@ -49,7 +53,7 @@
 
       .freeshipping-text {
         display: inline-block;
-        margin: -3px 0 0 8px;
+        margin: -3px 0 0 3px;
       }
 
       .freeshipping-logo {
@@ -72,6 +76,7 @@
 
   .link-container {
     margin-top: 7px;
+    height: 75px;
 
     a {
       display: block;
@@ -109,14 +114,16 @@
       display: flex;
       align-items: stretch;
       height: auto;
+      margin-top: 10px;
 
       .email {
         border: 0;
         background-color: #3a3e41;
         color: #f5f5f5;
+        font-family: TradeGothicLTCom, Helvetica, Arial, sans-serif;
         font-size: .875rem;
         font-style: italic;
-        padding: 10px 15px;
+        padding: 10px 29px 10px 15px;
         -webkit-transition: background-color .3s ease;
         transition: background-color .3s ease;
         -webkit-transition-delay: .1s;
@@ -133,14 +140,28 @@
         -webkit-transition: all .1s ease;
         transition: all .1s ease;
       }
+
+      ::-webkit-input-placeholder {
+        color: #666; 
+      }
+
+      ::-moz-placeholder {
+        color: #666; 
+      }
+
+      :-ms-input-placeholder {
+        color: #666; 
+      }
     }
 
     .checkbox-group {
       display: flex;
+      margin-top: 6px;
 
       .checkbox {
         display: flex;
         position: relative;
+        margin-right: 7px;
 
         input[type=checkbox] {
           opacity: 0;
