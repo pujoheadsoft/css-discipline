@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font: 16px/1 "Helvetica Neue", Helvetica, Arial, YuGothic, "Yu Gothic", 游ゴシック体,
+    "游ゴシック", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS ゴシック", "MS Gothic",
+    sans-serif;
+
+  background-color: #f2f2f2;
+  background-image: url(../images/bg-dot.svg);
+  background-repeat: repeat-y;
+  background-position: right;
+  background-size: 20px 40px;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
