@@ -1,10 +1,62 @@
 .article-container {
+    .side-banner {
+        float: right;
+        min-height: 38.75rem;
+        margin-right: 1.25rem;
+        margin-bottom: 1.25rem;
+
+        img {
+            border: 0pt none;
+            display: inline-block;
+            width: 300px;
+            height: 600px;
+        }
+    }
+
     .article {
         position: relative;
         float: left;
         width: 18.75rem;
+        min-height: 18.75rem;
         margin-right: 1.25rem;
         margin-bottom: 1.25rem;
+        padding: 1.25rem;
         background-color: #fff;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .category {
+        font-family: 'Forza A', 'Forza B','Helvetica Neue', Helvetica, Arial, YuGothic, 'Yu Gothic', 游ゴシック体, '游ゴシック', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'MS ゴシック', 'MS Gothic', sans-serif;
+        font-weight: 500;
+        letter-spacing: .1em;
+        margin-bottom: 1.125rem;
+    }
+
+    img {
+        width: auto;
+        max-height: 9.125rem;
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        font-size: .875rem;
+        max-height: 3em;
+        overflow: hidden;
+        color: #000;
+        line-height: 1.55em;
+    }
+
+    .time {
+        position: absolute;
+        bottom: 1.25rem;
+        left: 1.25rem;
+        font-style: italic;
+        color: gray;
+        font-size: .75rem;
+        font-weight: 400;
+        letter-spacing: .06em;
     }
 }
