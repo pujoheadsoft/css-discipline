@@ -21,6 +21,32 @@
         padding: 1.25rem;
         background-color: #fff;
     }
+    .article-container .article img {
+            width: auto;
+            max-height: 9.125rem;
+            margin-bottom: 1rem;
+        }
+    .article-container .article-large {
+        position: relative;
+        float: left;
+        max-width: 28.75rem;
+        height: 23.875rem;
+        margin-right: 1.25rem;
+        margin-bottom: 1.25rem;
+        padding: 1.25rem;
+        background-color: #fff;
+    }
+    .article-container .article-large img {
+            width: 420px;
+            margin-bottom: 1rem;
+        }
+    .article-container .article-large h1 {
+            margin-bottom: .375rem;
+        }
+    .article-container .article-large .time {
+            position: unset;
+            bottom: 0;
+        }
     .article-container a {
         text-decoration: none;
     }
@@ -29,11 +55,6 @@
         font-weight: 500;
         letter-spacing: .1em;
         margin-bottom: 1.125rem;
-    }
-    .article-container img {
-        width: auto;
-        max-height: 9.125rem;
-        margin-bottom: 1rem;
     }
     .article-container h1 {
         font-size: .875rem;
@@ -52,6 +73,41 @@
         font-weight: 400;
         letter-spacing: .06em;
     }
+    .article-container .advertize-container {
+        float: left;
+        margin-right: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+    .article-container .advertize-container img {
+            width: 300px;
+            height: 100px;
+        }
+    .article-container .new-article-container {
+        position: relative;
+        float: left;
+        width: 18rem;
+        padding: 1.25rem;
+        background-color: #fff;
+        margin-right: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+    .article-container .new-article-container .title h1 {
+                font-size: .875rem;
+                margin-bottom: .4em;
+                font-family: 'Vitesse A', 'Vitesse B','Helvetica Neue', Helvetica, Arial, YuGothic, 'Yu Gothic', 游ゴシック体, '\6E38\30B4\30B7\30C3\30AF', '\30D2\30E9\30AE\30CE\89D2\30B4   ProN W3', 'Hiragino Kaku Gothic ProN', '\30D2\30E9\30AE\30CE\89D2\30B4   Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'MS \30B4\30B7\30C3\30AF', 'MS Gothic', sans-serif;
+                font-weight: 500;
+                letter-spacing: .1em;
+                color: gray;
+            }
+    .article-container .new-article-container .title p {
+                font-weight: bolder;
+                font-size: .75rem;
+                color: gray;
+            }
+    .article-container .new-article-container ul {
+            list-style: none;
+            padding: 0;
+        }
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -105,7 +161,7 @@ h1, h2, h3 {
 .main-container {
     display: block;
     position: relative;
-    width: 58.75rem;
+    width: 60rem;
     margin: 0 auto;
     padding-top: 5.25rem;
 }

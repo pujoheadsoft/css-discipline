@@ -22,6 +22,37 @@
         margin-bottom: 1.25rem;
         padding: 1.25rem;
         background-color: #fff;
+
+        img {
+            width: auto;
+            max-height: 9.125rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .article-large {
+        position: relative;
+        float: left;
+        max-width: 28.75rem;
+        height: 23.875rem;
+        margin-right: 1.25rem;
+        margin-bottom: 1.25rem;
+        padding: 1.25rem;
+        background-color: #fff;
+
+        img {
+            width: 420px;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            margin-bottom: .375rem;
+        }
+
+        .time {
+            position: unset;
+            bottom: 0;
+        }
     }
 
     a {
@@ -33,12 +64,6 @@
         font-weight: 500;
         letter-spacing: .1em;
         margin-bottom: 1.125rem;
-    }
-
-    img {
-        width: auto;
-        max-height: 9.125rem;
-        margin-bottom: 1rem;
     }
 
     h1 {
@@ -58,5 +83,50 @@
         font-size: .75rem;
         font-weight: 400;
         letter-spacing: .06em;
+    }
+
+    .advertize-container {
+        float: left;
+        margin-right: 1.25rem;
+        margin-bottom: 1.25rem;
+
+        img {
+            width: 300px;
+            height: 100px;
+        }
+    }
+
+    .new-article-container {
+        position: relative;
+        float: left;
+        width: 18rem;
+        padding: 1.25rem;
+        background-color: #fff;
+        margin-right: 1.25rem;
+        margin-bottom: 1.25rem;
+
+        .title {
+
+            h1 {
+                font-size: .875rem;
+                margin-bottom: .4em;
+                font-family: 'Vitesse A', 'Vitesse B','Helvetica Neue', Helvetica, Arial, YuGothic, 'Yu Gothic', 游ゴシック体, '游ゴシック', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'MS ゴシック', 'MS Gothic', sans-serif;
+                font-weight: 500;
+                letter-spacing: .1em;
+                color: gray;
+            }
+
+            p {
+                font-weight: bolder;
+                font-size: .75rem;
+                color: gray;
+            }
+
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
     }
 }
