@@ -1,16 +1,21 @@
-.article-container .side-banner {
+.article-container {
+    width: 60rem;
+}
+
+    .article-container .side-banner {
         float: right;
         min-height: 38.75rem;
-        margin-right: 1.25rem;
+        margin-right: 1.2rem;
         margin-bottom: 1.25rem;
     }
 
-        .article-container .side-banner img {
+    .article-container .side-banner img {
             border: 0pt none;
             display: inline-block;
             width: 300px;
             height: 600px;
         }
+
     .article-container .article {
         position: relative;
         float: left;
@@ -20,12 +25,21 @@
         margin-bottom: 1.25rem;
         padding: 1.25rem;
         background-color: #fff;
+        opacity: 1;
+        transition: opacity 0.1s ease-in-out;
     }
+
     .article-container .article img {
             width: auto;
             max-height: 9.125rem;
             margin-bottom: 1rem;
         }
+
+    .article-container .article:hover {
+        opacity: 0.5;
+        transition: opacity 0.2s ease-in-out;
+    }
+
     .article-container .article-large {
         position: relative;
         float: left;
@@ -35,27 +49,41 @@
         margin-bottom: 1.25rem;
         padding: 1.25rem;
         background-color: #fff;
+        opacity: 1;
+        transition: opacity 0.1s ease-in-out;
     }
+
     .article-container .article-large img {
             width: 420px;
             margin-bottom: 1rem;
         }
+
     .article-container .article-large h1 {
             margin-bottom: .375rem;
         }
+
     .article-container .article-large .time {
             position: unset;
             bottom: 0;
         }
+
+    .article-container .article-large:hover {
+        opacity: 0.5;
+        transition: opacity 0.2s ease-in-out;
+    }
+
     .article-container a {
         text-decoration: none;
     }
+
     .article-container .category {
         font-family: 'Forza A', 'Forza B','Helvetica Neue', Helvetica, Arial, YuGothic, 'Yu Gothic', 游ゴシック体, '\6E38\30B4\30B7\30C3\30AF', '\30D2\30E9\30AE\30CE\89D2\30B4   ProN W3', 'Hiragino Kaku Gothic ProN', '\30D2\30E9\30AE\30CE\89D2\30B4   Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'MS \30B4\30B7\30C3\30AF', 'MS Gothic', sans-serif;
         font-weight: 500;
         letter-spacing: .1em;
         margin-bottom: 1.125rem;
+        color: grey;
     }
+
     .article-container h1 {
         font-size: .875rem;
         max-height: 3em;
@@ -63,6 +91,7 @@
         color: #000;
         line-height: 1.55em;
     }
+
     .article-container .time {
         position: absolute;
         bottom: 1.25rem;
@@ -73,24 +102,31 @@
         font-weight: 400;
         letter-spacing: .06em;
     }
+
     .article-container .advertize-container {
         float: left;
         margin-right: 1.25rem;
         margin-bottom: 1.25rem;
     }
+
     .article-container .advertize-container img {
             width: 300px;
             height: 100px;
         }
+
     .article-container .new-article-container {
         position: relative;
         float: left;
-        width: 18rem;
         padding: 1.25rem;
         background-color: #fff;
         margin-right: 1.25rem;
         margin-bottom: 1.25rem;
     }
+
+    .article-container .new-article-container .title {
+            margin-bottom: 1.25rem;
+        }
+
     .article-container .new-article-container .title h1 {
                 font-size: .875rem;
                 margin-bottom: .4em;
@@ -99,15 +135,48 @@
                 letter-spacing: .1em;
                 color: gray;
             }
+
     .article-container .new-article-container .title p {
                 font-weight: bolder;
                 font-size: .75rem;
                 color: gray;
             }
+
     .article-container .new-article-container ul {
             list-style: none;
             padding: 0;
         }
+
+    .article-container .new-article-container ul li {
+                margin-bottom: 1.0625rem;
+                opacity: 1;
+                transition: opacity 0.2s ease-in-out;
+            }
+
+    .article-container .new-article-container ul li img {
+                    width: 3.4375rem;
+                }
+
+    .article-container .new-article-container ul li:hover {
+                opacity: 0.5;
+                transition: opacity 0.2s ease-in-out;
+            }
+
+    .article-container .new-article-container .article-title {
+            font-size: .75rem;
+            line-height: 1.6em;
+            color: #000;
+            float: left;
+            width: 12.1875rem;
+            margin-right: .625rem;
+            max-height: 3.25rem;
+            overflow: hidden;
+        }
+
+    .article-container .new-article-container .article-title .category {
+                margin-bottom: 0;
+                color: gray;
+            }
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -158,15 +227,128 @@ h1, h2, h3 {
     width: 1.5rem;
     height: 1.5rem;
   }
+.slider-container {
+    width: 58.75rem;
+    overflow: hidden;
+}
+.slider-container .innovation {
+        position: absolute;
+        left: -6.875rem;
+        top: 6.075rem;
+        z-index: 100;
+        padding: 0 .625rem 0 2.0625rem;
+        color: #fff;
+        font-family: 'Vitesse A', 'Vitesse B','Helvetica Neue', Helvetica, Arial, YuGothic, 'Yu Gothic', 游ゴシック体, '\6E38\30B4\30B7\30C3\30AF', '\30D2\30E9\30AE\30CE\89D2\30B4   ProN W3', 'Hiragino Kaku Gothic ProN', '\30D2\30E9\30AE\30CE\89D2\30B4   Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'MS \30B4\30B7\30C3\30AF', 'MS Gothic', sans-serif;
+        font-weight: 500;
+        letter-spacing: .1em;
+        font-size: .6875rem;
+        background: #000;
+        line-height: 1.55em;
+    }
+.slider-container .innovation:after {
+        content: '';
+        position: absolute;
+        right: 11.25rem;
+        top: 0;
+        display: block;
+        width: 999em;
+        height: 1.04rem;
+        background: #000;
+    }
+.pagenation {
+    position: absolute;
+    bottom: 40px;
+    text-align: center;
+    width: 100%;
+}
+.pagenation .page-bullet {
+        display: inline-block;
+        background: url(data:image/svg+xml;base64,PHN2ZyBpZD0i44Os44Kk44Ok44O8XzEiIGRhdGEtbmFtZT0i44Os44Kk44Ok44O8IDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPuWQjeensOacquioreWumi0xPC90aXRsZT4KPGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTIiLz48L3N2Zz4=) no-repeat;
+        width: 7px;
+        height: 7px;
+        margin: 0 5px;
+    }
+.pagenation .page-bullet.active {
+        background: url(data:image/svg+xml;base64,PHN2ZyBpZD0i44Os44Kk44Ok44O8XzEiIGRhdGEtbmFtZT0i44Os44Kk44Ok44O8IDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPuWQjeensOacquioreWumi0xPC90aXRsZT4KPGNpcmNsZSBjbGFzcz0iY2xzLTEiIGN4PSIxMiIgY3k9IjEyIiByPSIxMiIvPjwvc3ZnPgo=) no-repeat;
+    }
+.button-prev {
+    display: block;
+    position: absolute;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0i44Os44Kk44Ok44O8XzEiIGRhdGEtbmFtZT0i44Os44Kk44Ok44O8IDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPuWQjeensOacquioreWumi0xPC90aXRsZT48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMiIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSIxMi42NyA1IDE1LjUgNSA4LjUgMTIgMTUuNSAxOSAxMi42NyAxOSA1LjY3IDEyIDEyLjY3IDUiLz48L3N2Zz4=);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center;
+    top: 0;
+    width: 92px;
+    height: 510px;
+    z-index: 10;
+    cursor: pointer;
+    -moz-background-size: 24px;
+    -webkit-background-size: 24px;
+}
+.button-next {
+    display: block;
+    position: absolute;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0i44Os44Kk44Ok44O8XzEiIGRhdGEtbmFtZT0i44Os44Kk44Ok44O8IDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPuWQjeensOacquioreWumi0xPC90aXRsZT48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMiIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSIxMS4zMyAxOSA4LjUgMTkgMTUuNSAxMiA4LjUgNSAxMS4zMyA1IDE4LjMzIDEyIDExLjMzIDE5Ii8+PC9zdmc+);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center;
+    top: 0;
+    right: 35px;
+    width: 24px;
+    height: 510px;
+    z-index: 10;
+    cursor: pointer;
+    -moz-background-size: 24px;
+    -webkit-background-size: 24px;
+}
+.image-slider {
+    display: flex;
+    margin-left: -21.25rem;
+    margin-bottom: 1.25rem;
+    position: relative;
+
+}
+.image-slider .slider-item {
+        position: relative;
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+    }
+.image-slider .slider-item img {
+            width: 742.667px;
+        }
+.image-slider .slider-item .text-container {
+            position: absolute;
+            bottom: 43px;
+            left: 20px;
+            font-family: "Helvetica Neue",Helvetica,Arial, YuGothic, 'Yu Gothic', 游ゴシック体, '\6E38\30B4\30B7\30C3\30AF', "\30D2\30E9\30AE\30CE\89D2\30B4   ProN W3","Hiragino Kaku Gothic ProN","\30D2\30E9\30AE\30CE\89D2\30B4   Pro W3","Hiragino Kaku Gothic Pro","\30E1\30A4\30EA\30AA", Meiryo,"MS \30B4\30B7\30C3\30AF","MS Gothic",sans-serif;
+            font-weight: bold;
+            font-style: normal;
+            font-size: 1.125rem;
+            line-height: 1.5em;
+            color: #fff;
+
+        }
+.image-slider .slider-item .text-container .category {
+                color: grey;
+                font-size: .75rem;
+                font-family: 'Forza A', 'Forza B','Helvetica Neue', Helvetica, Arial, YuGothic, 'Yu Gothic', 游ゴシック体, '\6E38\30B4\30B7\30C3\30AF', '\30D2\30E9\30AE\30CE\89D2\30B4   ProN W3', 'Hiragino Kaku Gothic ProN', '\30D2\30E9\30AE\30CE\89D2\30B4   Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'MS \30B4\30B7\30C3\30AF', 'MS Gothic', sans-serif;
+                font-weight: 500;
+                letter-spacing: .1em;
+            }
+.image-slider .slider-item .hidden {
+            opacity: 0;
+        }
+.image-slider .slider-item:hover {
+        opacity: 0.7;
+        transition: opacity 0.3s ease-in-out;
+    }
 .main-container {
     display: block;
     position: relative;
-    width: 60rem;
+    width: 58.75rem;
     margin: 0 auto;
-    padding-top: 5.25rem;
-}
-.image-slider {
-    background: url(./images/180123-unseen-1080.jpg) no-repeat;
+    padding-top: 4.8rem;
 }
 /*
 	Copyright (C) 2011-2017 Hoefler & Co.

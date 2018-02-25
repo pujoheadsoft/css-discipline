@@ -1,11 +1,7 @@
 .main-container {
     display: block;
     position: relative;
-    width: 60rem;
+    width: 58.75rem;
     margin: 0 auto;
-    padding-top: 5.25rem;
-}
-
-.image-slider {
-    background: url(../images/180123-unseen-1080.jpg) no-repeat;
+    padding-top: 4.8rem;
 }

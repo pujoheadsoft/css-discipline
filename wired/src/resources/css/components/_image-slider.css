@@ -1,0 +1,128 @@
+.slider-container {
+    width: 58.75rem;
+    overflow: hidden;
+
+    .innovation {
+        position: absolute;
+        left: -6.875rem;
+        top: 6.075rem;
+        z-index: 100;
+        padding: 0 .625rem 0 2.0625rem;
+        color: #fff;
+        font-family: 'Vitesse A', 'Vitesse B','Helvetica Neue', Helvetica, Arial, YuGothic, 'Yu Gothic', 游ゴシック体, '游ゴシック', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'MS ゴシック', 'MS Gothic', sans-serif;
+        font-weight: 500;
+        letter-spacing: .1em;
+        font-size: .6875rem;
+        background: #000;
+        line-height: 1.55em;
+    }
+
+    .innovation:after {
+        content: '';
+        position: absolute;
+        right: 11.25rem;
+        top: 0;
+        display: block;
+        width: 999em;
+        height: 1.04rem;
+        background: #000;
+    }
+}
+
+.pagenation {
+    position: absolute;
+    bottom: 40px;
+    text-align: center;
+    width: 100%;
+    .page-bullet {
+        display: inline-block;
+        background: url(../images/circle.svg) no-repeat;
+        width: 7px;
+        height: 7px;
+        margin: 0 5px;
+    }
+
+    .page-bullet.active {
+        background: url(../images/circle-white.svg) no-repeat;
+    }
+}
+
+.button-prev {
+    display: block;
+    position: absolute;
+    background-image: url(../images/arrow_left.svg);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center;
+    top: 0;
+    width: 92px;
+    height: 510px;
+    z-index: 10;
+    cursor: pointer;
+    -moz-background-size: 24px;
+    -webkit-background-size: 24px;
+}
+
+.button-next {
+    display: block;
+    position: absolute;
+    background-image: url(../images/arrow_right.svg);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center;
+    top: 0;
+    right: 35px;
+    width: 24px;
+    height: 510px;
+    z-index: 10;
+    cursor: pointer;
+    -moz-background-size: 24px;
+    -webkit-background-size: 24px;
+}
+
+.image-slider {
+    display: flex;
+    margin-left: -21.25rem;
+    margin-bottom: 1.25rem;
+    position: relative;
+
+    .slider-item {
+        position: relative;
+        img {
+            width: 742.667px;
+        }
+    
+        .text-container {
+            position: absolute;
+            bottom: 43px;
+            left: 20px;
+            font-family: "Helvetica Neue",Helvetica,Arial, YuGothic, 'Yu Gothic', 游ゴシック体, '游ゴシック', "ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ", Meiryo,"MS ゴシック","MS Gothic",sans-serif;
+            font-weight: bold;
+            font-style: normal;
+            font-size: 1.125rem;
+            line-height: 1.5em;
+            color: #fff;
+
+            .category {
+                color: grey;
+                font-size: .75rem;
+                font-family: 'Forza A', 'Forza B','Helvetica Neue', Helvetica, Arial, YuGothic, 'Yu Gothic', 游ゴシック体, '游ゴシック', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'MS ゴシック', 'MS Gothic', sans-serif;
+                font-weight: 500;
+                letter-spacing: .1em;
+            }
+
+        }
+
+        .hidden {
+            opacity: 0;
+        }
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .slider-item:hover {
+        opacity: 0.7;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+}
