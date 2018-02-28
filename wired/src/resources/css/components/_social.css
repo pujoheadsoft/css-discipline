@@ -1,0 +1,71 @@
+.social-container {
+    background: #fff;
+    position: absolute;
+    top: 540px;
+    left: 240px;
+    text-align: center;
+
+    h1 {
+        font-family: 'Vitesse A', 'Vitesse B','Helvetica Neue', Helvetica, Arial, YuGothic, 'Yu Gothic', 游ゴシック体, '游ゴシック', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'MS ゴシック', 'MS Gothic', sans-serif;
+        font-weight: 500;
+        letter-spacing: .1em;
+        margin-bottom: 1.125rem;
+        font-size: .75rem;
+        color: gray;
+        line-height: 1.2;
+    }
+
+    .icon-twitter {
+        display: inline-block;
+        background: url(../images/icon-twitter.svg) no-repeat;
+        background-position: center;
+        background-size: 100%;
+        width: 33px;
+        height: 33px;
+    }
+
+    .icon-facebook {
+        display: inline-block;
+        background: url(../images/icon-facebook.svg) no-repeat;
+        background-position: center;
+        background-size: 100%;
+        width: 33px;
+        height: 33px;
+    }
+
+    .icon-line {
+        display: inline-block;
+        background: url(../images/icon-line.svg) no-repeat;
+        background-position: center;
+        background-size: 100%;
+        width: 33px;
+        height: 33px;
+    }
+
+    .icon-google {
+        display: inline-block;
+        background: url(../images/icon-google.svg) no-repeat;
+        background-position: center;
+        background-size: 100%;
+        width: 33px;
+        height: 33px;
+    }
+
+    .icon-rss {
+        display: inline-block;
+        background: url(../images/icon-rss.svg) no-repeat;
+        background-position: center;
+        background-size: 100%;
+        width: 33px;
+        height: 33px;
+    }
+
+    .icon-mail {
+        display: inline-block;
+        background: url(../images/icon-mail.svg) no-repeat;
+        background-position: center;
+        background-size: 100%;
+        width: 33px;
+        height: 33px;
+    }
+}
