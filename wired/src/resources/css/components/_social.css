@@ -2,8 +2,9 @@
     background: #fff;
     position: absolute;
     top: 540px;
-    left: 240px;
+    left: 168px;
     text-align: center;
+    padding: 28px 15px 28px;
 
     h1 {
         font-family: 'Vitesse A', 'Vitesse B','Helvetica Neue', Helvetica, Arial, YuGothic, 'Yu Gothic', 游ゴシック体, '游ゴシック', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'MS ゴシック', 'MS Gothic', sans-serif;
@@ -13,6 +14,10 @@
         font-size: .75rem;
         color: gray;
         line-height: 1.2;
+    }
+
+    li {
+        margin-bottom: 8px;
     }
 
     .icon-twitter {
@@ -67,5 +72,11 @@
         background-size: 100%;
         width: 33px;
         height: 33px;
+    }
+}
+
+@media screen and (max-width: $break-point) {
+    .social-container {
+        display: none;
     }
 }

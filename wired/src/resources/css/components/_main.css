@@ -5,3 +5,10 @@
     margin: 0 auto;
     padding-top: 4.8rem;
 }
+
+@media screen and (max-width: $break-point) {
+    .main-container {
+        width: unset;
+        padding-top: 68px;
+    }
+}

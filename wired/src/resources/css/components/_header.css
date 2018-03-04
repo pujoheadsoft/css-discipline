@@ -26,3 +26,15 @@
     height: 1.5rem;
   }
 }
+
+@media screen and (max-width: $break-point) {
+  .header {
+    h1 {
+      padding: 17px 0;
+    }
+
+    .humberger {
+      top: 16px;
+    }
+  }
+}

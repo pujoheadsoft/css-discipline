@@ -74,11 +74,19 @@
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(13);
+__webpack_require__(19);
+
+window.addEventListener("scroll", (e) => {
+    const style = document.querySelector(".social-container").style;
+    const isOver = window.scrollY > 460
+    style.top = isOver ? "77px" : "540px";
+    style.position = isOver ? "fixed" : "absolute";
+});
+
 
 /***/ }),
 
-/***/ 13:
+/***/ 19:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
