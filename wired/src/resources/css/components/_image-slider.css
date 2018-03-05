@@ -117,12 +117,11 @@
             opacity: 0;
         }
         opacity: 1;
-        transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s;
     }
 
     .slider-item:hover {
         opacity: 0.7;
-        transition: opacity 0.3s ease-in-out;
     }
 
 }

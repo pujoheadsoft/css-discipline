@@ -41,6 +41,7 @@ ul {
 
 .article-container {
     width: 60rem;
+    position: relative;
 }
 
 .article-container .side-banner {
@@ -53,8 +54,7 @@ ul {
 .article-container .side-banner img {
             border: 0pt none;
             display: inline-block;
-            width: 300px;
-            height: 600px;
+            width: 412px;
         }
 
 .article-container .article {
@@ -67,7 +67,7 @@ ul {
         padding: 1.25rem;
         background-color: #fff;
         opacity: 1;
-        transition: opacity 0.1s ease-in-out;
+        transition: opacity 0.2s;
     }
 
 .article-container .article img {
@@ -78,7 +78,6 @@ ul {
 
 .article-container .article:hover {
         opacity: 0.5;
-        transition: opacity 0.2s ease-in-out;
     }
 
 .article-container .article-large {
@@ -91,11 +90,11 @@ ul {
         padding: 1.25rem;
         background-color: #fff;
         opacity: 1;
-        transition: opacity 0.1s ease-in-out;
+        transition: opacity 0.2s;
     }
 
 .article-container .article-large img {
-            width: 420px;
+            width: 580px;
             margin-bottom: 1rem;
         }
 
@@ -110,7 +109,6 @@ ul {
 
 .article-container .article-large:hover {
         opacity: 0.5;
-        transition: opacity 0.2s ease-in-out;
     }
 
 .article-container a {
@@ -151,8 +149,7 @@ ul {
     }
 
 .article-container .advertize-container img {
-            width: 300px;
-            height: 100px;
+            width: 412px;
         }
 
 .article-container .new-article-container {
@@ -191,7 +188,7 @@ ul {
 .article-container .new-article-container ul li {
                 margin-bottom: 1.0625rem;
                 opacity: 1;
-                transition: opacity 0.2s ease-in-out;
+                transition: opacity 0.2s;
             }
 
 .article-container .new-article-container ul li img {
@@ -200,7 +197,6 @@ ul {
 
 .article-container .new-article-container ul li:hover {
                 opacity: 0.5;
-                transition: opacity 0.2s ease-in-out;
             }
 
 .article-container .new-article-container .article-title {
@@ -248,6 +244,11 @@ ul {
             max-width: unset;
             height: unset;
         }
+
+            .article-container .article-large img {
+                width: 100%;
+                max-height: none;
+            }
 
             .article-container .article-large h1 {
                 margin-bottom: 8.25px;
@@ -428,7 +429,7 @@ ul {
 .image-slider .slider-item {
         position: relative;
         opacity: 1;
-        transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s;
     }
 
 .image-slider .slider-item img {
@@ -462,7 +463,6 @@ ul {
 
 .image-slider .slider-item:hover {
         opacity: 0.7;
-        transition: opacity 0.3s ease-in-out;
     }
 
 @media screen and (max-width: 660px) {
@@ -524,8 +524,8 @@ ul {
 .social-container {
     background: #fff;
     position: absolute;
-    top: 540px;
-    left: 168px;
+    top: 0px;
+    left: -137px;
     text-align: center;
     padding: 28px 15px 28px;
 }

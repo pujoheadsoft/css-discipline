@@ -1,5 +1,6 @@
 .article-container {
     width: 60rem;
+    position: relative;
 
     .side-banner {
         float: right;
@@ -10,8 +11,7 @@
         img {
             border: 0pt none;
             display: inline-block;
-            width: 300px;
-            height: 600px;
+            width: 412px;
         }
     }
 
@@ -25,7 +25,7 @@
         padding: 1.25rem;
         background-color: #fff;
         opacity: 1;
-        transition: opacity 0.1s ease-in-out;
+        transition: opacity 0.2s;
 
         img {
             width: auto;
@@ -36,7 +36,6 @@
 
     .article:hover {
         opacity: 0.5;
-        transition: opacity 0.2s ease-in-out;
     }
 
     .article-large {
@@ -49,10 +48,10 @@
         padding: 1.25rem;
         background-color: #fff;
         opacity: 1;
-        transition: opacity 0.1s ease-in-out;
+        transition: opacity 0.2s;
 
         img {
-            width: 420px;
+            width: 580px;
             margin-bottom: 1rem;
         }
 
@@ -68,7 +67,6 @@
     
     .article-large:hover {
         opacity: 0.5;
-        transition: opacity 0.2s ease-in-out;
     }
 
     a {
@@ -108,8 +106,7 @@
         margin-bottom: 1.25rem;
 
         img {
-            width: 300px;
-            height: 100px;
+            width: 412px;
         }
     }
 
@@ -146,7 +143,7 @@
             li {
                 margin-bottom: 1.0625rem;
                 opacity: 1;
-                transition: opacity 0.2s ease-in-out;
+                transition: opacity 0.2s;
 
                 img {
                     width: 3.4375rem;
@@ -155,7 +152,6 @@
 
             li:hover {
                 opacity: 0.5;
-                transition: opacity 0.2s ease-in-out;
             }
         }
 
@@ -204,6 +200,11 @@
             width: 100%;
             max-width: unset;
             height: unset;
+
+            img {
+                width: 100%;
+                max-height: none;
+            }
 
             h1 {
                 margin-bottom: 8.25px;
