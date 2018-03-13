@@ -14,11 +14,10 @@ export default class StockChart {
         const xUnit = (this.canvas.getWidth() - 1) / (this.stockRecords.size() - 1);
         const points = new Points(this.stockRecords.map((e, index) => new Point(index * xUnit, this._lerpValue(e.adjClose))));
 
+        /*
         this.canvas.setStrokeStyle("#f5f5f5");
         points.forEach(p => this.canvas.drawLine(new Point(p.x, this.canvas.getHeight()), new Point(p.x, 0)));
-
-        this.canvas.setStrokeStyle("#0000FF");
-        this.canvas.drawLines(points);
+        */
 
         const gradientPoints = points.concat([
             new Point(this.canvas.getWidth(), this.canvas.getHeight()),
@@ -27,10 +26,10 @@ export default class StockChart {
 
         const gradientStart = gradientPoints.getMinYPoint();
         const gradientEnd = new Point(gradientStart.x, this.canvas.getHeight());
-        const colorStops = new ColorStops([new ColorStop(0, "#00FF00A0"), new ColorStop(1, "#0099FFA0")]);
+        const colorStops = new ColorStops([new ColorStop(0, "#00FF99A0"), new ColorStop(1, "#00BBFFA0")]);
         this.canvas.setLinearGradientStyle(gradientStart, gradientEnd, colorStops);
         this.canvas.drawPolygon(gradientPoints);
-
+/*
         this.canvas.setStrokeStyle("#3f3f3f");
         this.canvas.drawLines(new Points([
             new Point(0, 0),
@@ -39,6 +38,7 @@ export default class StockChart {
             new Point(0, this.canvas.getHeight() - 1),
             new Point(0, 0)
         ]));
+        */
     }
 
     refreshSize = () => this.canvas.refreshSize();
