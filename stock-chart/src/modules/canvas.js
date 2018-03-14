@@ -2,7 +2,8 @@ import {Points} from "./point";
 
 export default class Canvas {
     constructor() {
-        this.container = document.querySelector(".canvas-container");
+        //this.container = document.querySelector(".canvas-container");
+        this.container = document.querySelector("html");
         this.canvas = document.querySelector(".canvas-container canvas");
         this.context = this.canvas.getContext("2d");
         this.refreshSize();
@@ -10,7 +11,7 @@ export default class Canvas {
 
     refreshSize = () => {
         this.canvas.setAttribute("width", this.getWidth());
-        this.canvas.setAttribute("height", this.getHeight());
+        this.canvas.setAttribute("height", this.getHeight() - 3);
     }
 
     getWidth = () => this.container.getBoundingClientRect().width;
