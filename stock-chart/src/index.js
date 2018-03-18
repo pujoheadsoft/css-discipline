@@ -6,14 +6,14 @@ import StockChart from "./modules/stock-chart";
 window.addEventListener("load", e => {
     const csvData = csvSync(csv);
     const stockChart = new StockChart(csvData);
-    stockChart.drawChart();
+    stockChart.draw();
 
     var timer = null;
     window.addEventListener("resize", e => {
         clearTimeout(timer);
         timer = setTimeout(() => {
             stockChart.refreshSize();
-            stockChart.drawChart();
+            stockChart.draw();
         }, 200);
     });
 })

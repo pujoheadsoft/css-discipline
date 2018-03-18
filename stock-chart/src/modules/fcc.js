@@ -22,6 +22,17 @@ export default class FCC {
         return this;
     }
 
+    groupBy = (keySelector) => {
+        var map = new Map();
+        this.array.forEach(e => {
+            const key = keySelector(e);
+            const values = map.get(key) || [];
+            values.push(e);
+            map.set(key, values);
+        });
+        return map;
+    }
+
     _partition = (array, index, step) => {
         if (index + step > array.length) {
             return [];

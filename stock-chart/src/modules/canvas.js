@@ -1,4 +1,5 @@
 import {Points} from "./point";
+import Rectangle from "./rectangle";
 
 export default class Canvas {
     constructor() {
@@ -18,6 +19,11 @@ export default class Canvas {
 
     getHeight = () => this.container.getBoundingClientRect().height;
 
+    getRectangle = () => {
+        const clientRect = this.container.getBoundingClientRect();
+        return new Rectangle(clientRect.x, clientRect.y, clientRect.width, clientRect.height);
+    }
+
     drawLine = (p1, p2) => this.drawLines(new Points([p1, p2]));
 
     drawLines = (points) => {
@@ -32,6 +38,8 @@ export default class Canvas {
         this.context.closePath();
         this.context.fill();
     }
+
+    drawText = (value, point) => this.context.fillText(value, point.x, point.y);
 
     setLineStyle = (lineStyle) => {
         this.context.lineWidth = lineStyle.lineWidth;
@@ -49,6 +57,12 @@ export default class Canvas {
         colorStops.forEach(e => gradient.addColorStop(e.offset, e.color));
         this.setFillStyle(gradient);
     }
+
+    setFont = (value) => this.context.font = value;
+
+    setTextBaseline = (value) => this.context.textBaseline = value;
+
+    getTextWidth = (value) => this.context.measureText(value).width;
 
     _buildPath = (points) => {
         this._moveTo(points.first());
