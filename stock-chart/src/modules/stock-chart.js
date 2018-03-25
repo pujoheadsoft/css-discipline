@@ -23,7 +23,7 @@ export default class StockChart {
 
     draw = () => {
         this.drawChart();
-        this.drawCandle();
+        // this.drawCandle();
         this.drawDate();
         this.drawValue();
     }
