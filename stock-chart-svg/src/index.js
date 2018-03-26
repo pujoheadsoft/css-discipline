@@ -12,7 +12,6 @@ window.addEventListener("load", e => {
     window.addEventListener("resize", e => {
         clearTimeout(timer);
         timer = setTimeout(() => {
-            stockChart.refreshSize();
             stockChart.draw();
         }, 200);
     });

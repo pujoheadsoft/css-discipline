@@ -17,6 +17,11 @@ export default class StockChart {
         const rect = chartContainer.getBoundingClientRect();
         const width = rect.width - margin.left - margin.right;
         const height = rect.height - margin.top - margin.bottom;
+        const minValue = this._floorValue(this.currentRecords.getMinAdjClose(), 2);
+        const maxValue = this._ceilValue(this.currentRecords.getMaxAdjClose(), 2);
+        console.log(rect);
+
+        d3.selectAll("svg").remove();
 
         const svg = d3.select(".chart-container")
             .append("svg")
@@ -31,7 +36,7 @@ export default class StockChart {
             .range([0, width]);
 
         const yScale = d3.scaleLinear()
-            .domain([this.currentRecords.getMinAdjClose(), this.currentRecords.getMaxAdjClose()])
+            .domain([minValue, maxValue])
             .range([height, 0]);
 
         const xAxis = d3.axisBottom()
@@ -57,15 +62,6 @@ export default class StockChart {
                     .y(d => yScale(d.adjClose));
                     */
 
-        const points = this.currentRecords
-            .map(e => new Point(xScale(e.date), yScale(e.adjClose)))
-            .concat([
-                new Point(xScale(this.currentRecords.getEndDate()), yScale(this.currentRecords.getMinAdjClose())),
-                new Point(xScale(this.currentRecords.getStartDate()), yScale(this.currentRecords.getMinAdjClose()))
-            ])
-            .map(e => `${e.x},${e.y}`)
-            .join(" ");
-
         var gradient = svg.append("defs")
             .append("linearGradient")
             .attr("id", "gradient")
@@ -77,17 +73,50 @@ export default class StockChart {
 
         gradient.append("stop")
             .attr("offset", "0%")
-            .attr("stop-color", "#005c97")
+            .attr("stop-color", "#04befe")
             .attr("stop-opacity", 1);
 
         gradient.append("stop")
             .attr("offset", "100%")
-            .attr("stop-color", "#363795")
+            .attr("stop-color", "#4481eb")
             .attr("stop-opacity", 1);
 
-        // path要素を作成
+        /*
+        const points = this.currentRecords
+            .map(e => new Point(xScale(e.date), yScale(e.adjClose)))
+            .concat([
+                new Point(xScale(this.currentRecords.getEndDate()), yScale(minValue)),
+                new Point(xScale(this.currentRecords.getStartDate()), yScale(minValue))
+            ])
+            .map(e => `${e.x},${e.y}`)
+            .join(" ");
+
         svg.append("polygon")
             .attr("points", points)
+            .attr("fill", "url(#gradient)");
+            */
+/*
+        const line = d3.line()
+            .x(e => xScale(e.date))
+            .y(e => yScale(e.adjClose))
+            .curve(d3.curveCardinal);
+
+        svg.append("path")
+            .datum(this.currentRecords.array)
+            .attr("d", line)
+            .attr("stroke", "#04befe")
+            .attr("fill", "none");
+            */
+
+        const area = d3.area()
+            .x(e => xScale(e.date))
+            .y0(height)
+            .y1(e => yScale(e.adjClose))
+            .curve(d3.curveCardinal);
+
+        svg.append("path")
+            .datum(this.currentRecords.array)
+            .attr("d", area)
             .attr("fill", "url(#gradient)");
 
         svg.append("g")
@@ -99,5 +128,17 @@ export default class StockChart {
             .attr("transform", `translate(0, 0)`);
 
     }
+
+    _ceilValue = (value, truncateCount) => {
+        const roundingFactor = this._roundingFactor(truncateCount);
+        return Math.ceil(value / roundingFactor) * roundingFactor;
+    }
+
+    _floorValue = (value, truncateCount) => {
+        const roundingFactor = this._roundingFactor(truncateCount);
+        return Math.floor(value / roundingFactor) * roundingFactor;
+    }
+
+    _roundingFactor = (truncateCount) => parseInt(`1${"0".repeat(truncateCount)}`);
 }
 
