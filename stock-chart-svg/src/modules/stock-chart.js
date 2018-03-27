@@ -111,8 +111,8 @@ export default class StockChart {
         const area = d3.area()
             .x(e => xScale(e.date))
             .y0(height)
-            .y1(e => yScale(e.adjClose))
-            .curve(d3.curveCardinal);
+            .y1(e => yScale(e.adjClose));
+//            .curve(d3.curveCardinal);
 
         svg.append("path")
             .datum(this.currentRecords.array)
