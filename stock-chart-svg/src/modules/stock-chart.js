@@ -12,7 +12,7 @@ export default class StockChart {
     }
 
     draw = () => {
-        const margin = { top: 10, right: 20, bottom: 25, left: 50 }
+        const margin = { top: 20, right: 20, bottom: 25, left: 50 }
         const chartContainer = d3.select(".chart-container").node();
         const rect = chartContainer.getBoundingClientRect();
         const width = rect.width - margin.left - margin.right;
@@ -73,12 +73,12 @@ export default class StockChart {
 
         gradient.append("stop")
             .attr("offset", "0%")
-            .attr("stop-color", "#04befe")
+            .attr("stop-color", "#c2e9fb")
             .attr("stop-opacity", 1);
 
         gradient.append("stop")
             .attr("offset", "100%")
-            .attr("stop-color", "#4481eb")
+            .attr("stop-color", "#a1c4fd")
             .attr("stop-opacity", 1);
 
         /*
