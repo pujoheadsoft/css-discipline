@@ -18,8 +18,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.ts$/,
-        use: "ts-loader"
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'ts-loader',
+          options: {
+            appendTsSuffixTo: [/\.vue$/]
+          }
+        }
       },
       {
         test: /\.jsx?$/,
@@ -30,6 +36,10 @@ module.exports = {
             cacheDirectory: true
           }
         }
+      },
+      {
+        test: /\.vue$/,
+        use: ["vue-loader"]
       },
       {
         test: /\.css$/,
@@ -65,6 +75,9 @@ module.exports = {
     })
   ],
   resolve: {
-    extensions: [".ts", ".js"]
+    alias: {
+      "vue$": "vue/dist/vue.esm.js"
+    },
+    extensions: [".ts", ".tsx", ".js", ".json"]
   }
 }

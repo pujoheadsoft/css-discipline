@@ -1,3 +1,4 @@
+
 export class FCC<T> {
     private array: Array<T>
 
@@ -49,3 +50,4 @@ export class FCC<T> {
         return [array.slice(index, index + size)].concat(this._partition(array, index + step, step, size));
     }
 }
+
