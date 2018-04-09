@@ -1,9 +1,29 @@
-
-export class FCC<T> {
-    private array: Array<T>
+export default class FCC<T> implements Iterable<T> {
+    array: Array<T>
 
     constructor(array: Array<T>) {
         this.array = array;
+    }
+
+    [Symbol.iterator]() {
+        let pointer = 0;
+        let components = this.array;
+
+        return {
+            next(): IteratorResult<T> {
+                if (pointer < components.length) {
+                    return {
+                        done: false,
+                        value: components[pointer++]
+                    }
+                } else {
+                    return {
+                        done: true,
+                        value: null!!
+                    }
+                }
+            }
+        }
     }
 
     size = () => this.array.length;
@@ -19,6 +39,8 @@ export class FCC<T> {
     rest = () => this.array.slice(1);
 
     last = () => this.array[this.size() - 1];
+
+    isFirst = (e: T) => this.first() === e;
 
     partition = (size: number, step: number = size) => this._partition(this.array, 0, step, size);
 
