@@ -1,0 +1,41 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 20;
+
+    .logo {
+        position: absolute;
+        top: 35px;
+        left: 40px;
+        z-index: 23;
+
+        a {
+            text-decoration: none;
+        }
+
+        .icon-part {
+            position: absolute;
+            color: #fff;
+
+        }
+        .icon-logo-text {
+            font-size: 39px;
+            left: 57px;
+            top: 6px;
+        }
+
+        .icon-bracket-l {
+            font-size: 46px;
+            top: 18px;
+        }
+
+        .icon-bracket-r {
+            font-size: 46px;
+            left: 0;
+            top: 0;
+        }
+    }
+}

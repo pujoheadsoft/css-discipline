@@ -1,0 +1,103 @@
+.hero-container {
+    height: 692px;
+    min-height: 600px;
+    overflow: hidden;
+
+    .content-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: stretch;
+        z-index: 3;
+
+        p, h1 {
+            color: #fff;
+        }
+
+        p {
+            font-family: sofia-pro;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+        }
+
+        h1 {
+            font-family: museo-slab;
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 1.35;
+            letter-spacing: 0.02em;
+            margin-top: 20px;
+        }
+    }
+}
+
+.hero-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-image1 {
+    background-image: url("../images/home-hero1.jpg");
+}
+
+.hero-text {
+    width: 100%;
+    position: relative;
+    margin-top: -80px;
+
+    .arrow-next {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        transition: transform 0.3s ease-out;
+
+        .icon {
+            font-size: 26px;
+            color: #fff;
+        }
+    }
+
+    .arrow-next:hover {
+        transform: translateY(7px);
+    }
+
+    .slider-timer {
+        position: absolute;
+        right: 30px;
+        bottom: -110px;
+        text-align: right;
+
+        .slider-time-circle {
+            position: relative;
+            display: inline-block;
+            width: 34px;
+            height: 34px;
+            cursor: pointer;
+
+            svg {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 34px;
+                height: 34px;
+                opacity: 0.4;
+            }
+        }
+
+        .slider-time-circle ~ .slider-time-circle {
+            margin-left: 15px;
+        }
+    }
+}
