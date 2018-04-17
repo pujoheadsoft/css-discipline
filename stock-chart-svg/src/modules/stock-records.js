@@ -2,7 +2,7 @@ import FCC from "./fcc";
 import dateformat from "dateformat";
 
 export class StockRecord {
-    constructor([date, open, high, low, close, adjClose, volume]) {
+    constructor({Date: date, Open: open, High: high, Low: low, Close: close, "Adj Close": adjClose, Volume: volume}) {
         this.date = new Date(date);
         this.open = Number.parseFloat(open);
         this.high = Number.parseFloat(high);

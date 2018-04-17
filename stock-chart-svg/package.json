@@ -35,8 +35,7 @@
     "webpack-dev-server": "^3.0.0"
   },
   "dependencies": {
-    "csv": "^2.0.0",
-    "d3": "^5.0.0",
+    "d3": "^5.0.1",
     "dateformat": "^3.0.3",
     "fs-ext": "^1.0.0",
     "jsdom": "^11.6.2"

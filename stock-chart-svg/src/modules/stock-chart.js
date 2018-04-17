@@ -7,7 +7,7 @@ import * as d3 from "d3";
 
 export default class StockChart {
     constructor(csvData) {
-        this.records = new StockRecords(csvData.slice(1).map(record => new StockRecord(record))).filterValidValues();
+        this.records = new StockRecords(csvData.map(record => new StockRecord(record))).filterValidValues();
         this.currentRecords = this.records.filterDateRange(new DateRange(new Date("2017-01-01"), new Date("2017-02-28")));
     }
 

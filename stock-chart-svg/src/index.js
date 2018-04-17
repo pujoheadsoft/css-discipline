@@ -1,10 +1,10 @@
 import "./resources/css/style.css";
-import csvSync from "csv-parse/lib/sync";
 import csv from "./resources/N225.csv";
 import StockChart from "./modules/stock-chart";
+import * as d3 from "d3";
 
-window.addEventListener("load", e => {
-    const csvData = csvSync(csv);
+window.addEventListener("load", async e => {
+    const csvData = await d3.csv("./resources/N225.csv");
     const stockChart = new StockChart(csvData);
     stockChart.draw();
 
