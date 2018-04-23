@@ -13,6 +13,8 @@
         width: 70px;
         height: 150px;
         background-color: #1f2a2a;
+        transition: height 0.4s;
+        overflow: hidden;
 
         .menu-line {
             width: 24px;
@@ -49,7 +51,13 @@
         }
 
         .menu-hit {
-            
+
+        }
+    }
+
+    &.has-sticky {
+        .menu-icon {
+            height: 62px;
         }
     }
 }

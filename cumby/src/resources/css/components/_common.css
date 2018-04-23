@@ -111,6 +111,10 @@ ul {
   content: "\e902";
 }
 
+.icon-brackets::before {
+  content: "\e903";
+}
+
 .icon-arrow-right::before {
   content: "\e906";
 }

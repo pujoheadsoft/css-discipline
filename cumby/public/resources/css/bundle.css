@@ -74,36 +74,27 @@
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(19);
-
-const getElement = (css) => document.querySelector(css);
-
-const getArticleContainer = () => getElement(".article-container");
-
-const getSocialContainer = () => getElement(".social-container");
-
-const isOver = () => window.scrollY > 437;
-
-const calcSocialContainerLeft = () => {
-    const articleX = getArticleContainer().getBoundingClientRect().x;
-    return isOver() ? `${articleX - 137}px` : "-137px";
-};
+__webpack_require__(16);
 
 window.addEventListener("scroll", (e) => {
-    const style = getSocialContainer().style;
-    style.top = isOver() ? "108px" : "0px";
-    style.position = isOver() ? "fixed" : "absolute";
-    style.left = calcSocialContainerLeft();
+    const y = window.scrollY;
+    const logo = document.querySelector(".header");
+    const menu = document.querySelector(".menu");
+    const stiky = document.querySelector(".header .sticky");
+    if (y === 0) {
+        logo.classList.remove("has-sticky");
+        menu.classList.remove("has-sticky");
+        stiky.classList.remove("on");
+    } else {
+        logo.classList.add("has-sticky");
+        menu.classList.add("has-sticky");
+        stiky.classList.add("on");
+    }
 });
-
-window.addEventListener("resize", (e) => {
-    getSocialContainer().style.left = calcSocialContainerLeft();
-});
-
 
 /***/ }),
 
-/***/ 19:
+/***/ 16:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
