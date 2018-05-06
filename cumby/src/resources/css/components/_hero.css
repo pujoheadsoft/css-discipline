@@ -1,5 +1,5 @@
 .hero-container {
-    height: 692px;
+    height: 100%;
     min-height: 600px;
     overflow: hidden;
 
@@ -26,11 +26,18 @@
 
         h1 {
             font-family: museo-slab;
-            font-size: 60px;
+            font-size: 78px;
             font-weight: 700;
             line-height: 1.35;
             letter-spacing: 0.02em;
-            margin-top: 20px;
+            margin-top: 40px;
+        }
+
+        @media screen and (max-height: 768px) and (min-width: 1025px) {
+            h1 {
+                font-size: 60px;
+                margin-top: 20px;
+            }
         }
     }
 }
@@ -52,12 +59,12 @@
 .hero-text {
     width: 100%;
     position: relative;
-    margin-top: -80px;
+    margin-top: -170px;
 
     .arrow-next {
         position: absolute;
         right: 0;
-        bottom: 0;
+        bottom: 18px;
         cursor: pointer;
         width: 50px;
         height: 50px;
@@ -76,7 +83,7 @@
     .slider-timer {
         position: absolute;
         right: 30px;
-        bottom: -110px;
+        bottom: -150px;
         text-align: right;
 
         .slider-time-circle {
@@ -98,6 +105,20 @@
 
         .slider-time-circle ~ .slider-time-circle {
             margin-left: 15px;
+        }
+    }
+}
+
+@media screen and (max-height: 768px) and (min-width: 1025px) {
+    .hero-text {
+        margin-top: -80px;
+
+        .arrow-next {
+            bottom: 0;
+        }
+
+        .slider-timer {
+            bottom: -110px;
         }
     }
 }

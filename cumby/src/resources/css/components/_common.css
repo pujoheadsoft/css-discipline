@@ -32,12 +32,35 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, img, ul {
   border: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #1f2a2a;
+}
+
 section {
   position: relative;
   width: 100%;
   padding-left: 70px;
   padding-right: 70px;
   z-index: 1;
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.68;
+    font-family: "sofia-pro", sans-serif;
+  }
+
+  h2 {
+    margin-bottom: 25px;
+  }
+
+  a {
+    color: #1f2a2a;
+  }
 }
 
 h2 {
@@ -97,6 +120,12 @@ ul {
     color: #1f2a2a;
     transition: transform 0.3s ease-out;
   }
+
+  p {
+    font: 700 12px/1 'sofia-pro', sans-serif;
+    letter-spacing: .1em;
+    color: #1f2a2a;
+  }
 }
 
 .icon-logo-text::before {
@@ -136,4 +165,8 @@ ul {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+}
+
+a {
+  text-decoration: none;
 }

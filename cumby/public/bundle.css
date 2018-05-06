@@ -32,6 +32,14 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, img, ul {
   border: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #1f2a2a;
+}
+
 section {
   position: relative;
   width: 100%;
@@ -39,6 +47,21 @@ section {
   padding-right: 70px;
   z-index: 1;
 }
+
+section p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.68;
+    font-family: "sofia-pro", sans-serif;
+  }
+
+section h2 {
+    margin-bottom: 25px;
+  }
+
+section a {
+    color: #1f2a2a;
+  }
 
 h2 {
   font: 700 27px/1 "museo-slab", sans-serif;
@@ -99,6 +122,12 @@ ul {
     transition: transform 0.3s ease-out;
   }
 
+.button p {
+    font: 700 12px/1 'sofia-pro', sans-serif;
+    letter-spacing: .1em;
+    color: #1f2a2a;
+  }
+
 .icon-logo-text::before {
   content: "\E904";
 }
@@ -134,6 +163,10 @@ ul {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+}
+
+a {
+  text-decoration: none;
 }
 
 .header {
@@ -203,7 +236,7 @@ ul {
             }
 
 .hero-container {
-    height: 692px;
+    height: 100%;
     min-height: 600px;
     overflow: hidden;
 }
@@ -232,11 +265,18 @@ ul {
 
 .hero-container .content-container h1 {
             font-family: museo-slab;
-            font-size: 60px;
+            font-size: 78px;
             font-weight: 700;
             line-height: 1.35;
             letter-spacing: 0.02em;
-            margin-top: 20px;
+            margin-top: 40px;
+        }
+
+@media screen and (max-height: 768px) and (min-width: 1025px) {
+            .hero-container .content-container h1 {
+                font-size: 60px;
+                margin-top: 20px;
+            }
         }
 
 .hero-background {
@@ -256,13 +296,13 @@ ul {
 .hero-text {
     width: 100%;
     position: relative;
-    margin-top: -80px;
+    margin-top: -170px;
 }
 
 .hero-text .arrow-next {
         position: absolute;
         right: 0;
-        bottom: 0;
+        bottom: 18px;
         cursor: pointer;
         width: 50px;
         height: 50px;
@@ -281,7 +321,7 @@ ul {
 .hero-text .slider-timer {
         position: absolute;
         right: 30px;
-        bottom: -110px;
+        bottom: -150px;
         text-align: right;
     }
 
@@ -304,6 +344,77 @@ ul {
 
 .hero-text .slider-timer .slider-time-circle ~ .slider-time-circle {
             margin-left: 15px;
+        }
+
+@media screen and (max-height: 768px) and (min-width: 1025px) {
+    .hero-text {
+        margin-top: -80px;
+    }
+
+        .hero-text .arrow-next {
+            bottom: 0;
+        }
+
+        .hero-text .slider-timer {
+            bottom: -110px;
+        }
+}
+
+.home-container {
+    margin-top: -170px;
+    overflow: hidden;
+    padding: 160px 120px;
+}
+
+.home-container .home-fill {
+        position: absolute;
+        left: 0;
+        top: 170px;
+        width: 70px;
+        height: 100%;
+        background-color: #fff;
+        z-index: 1;
+    }
+
+.home-container .home-patterns {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+
+.home-container .home-patterns .pattern {
+            position: absolute;
+            opacity: .15;
+        }
+
+.home-container .home-patterns .pattern[data-num="1"] {
+            width: 965px;
+            right: -385px;
+            top: -145px;
+        }
+
+.home-container .home-patterns .pattern[data-num="2"] {
+            width: 686px;
+            left: -240px;
+            top: -170px;
+        }
+
+.home-container .content-container {
+        padding-top: 170px;
+    }
+
+.home-container .col {
+        position: relative;
+    }
+
+.home-container .col.left {
+            width: 50%;
+        }
+
+.home-container .col.right {
+            width: 38%;
         }
 
 .menu {
@@ -365,12 +476,12 @@ ul {
         }
 
 .menu.has-sticky .menu-icon {
-            height: 62px;
+            height: 63px;
         }
 
 .project-container {
     padding: 0;
-    margin-top: -180px;
+    margin-top: -210px;
     z-index: 2;
 }
 
@@ -401,6 +512,12 @@ ul {
                     font-size: 12px;
                     letter-spacing: 0.1em;
                 }
+
+@media screen and (max-height: 768px) and (min-width: 1025px) {
+    .project-container {
+        margin-top: -180px;
+    }
+}
 
 .project-fill {
     position: absolute;
@@ -477,17 +594,10 @@ ul {
 
 .projects .project-wrap .project-row {
             position: relative;
-            max-width: 1430px;
         }
 
 .projects .project-wrap .project-row .project-box {
                 position: relative;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                justify-content: flex-end;
-                align-items: flex-start;
-                align-content: stretch;
             }
 
 .projects .project-wrap .project-row .project-box .image-container {
@@ -499,19 +609,31 @@ ul {
                     margin-bottom: 20px;
                 }
 
+.projects .project-wrap .project-row .project-box p {
+                    font-size: 14px;
+                }
+
+.projects .project-wrap .project-row .project-box h3 {
+                    margin-bottom: 5px;
+                }
+
+.projects .project-wrap .project-row .project-box .image {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    position: relative;
+                    background-size: cover;
+                    background-position: center top;
+                    background-repeat: no-repeat;
+                }
+
 .projects .project-wrap .project-row .project-box.academic-container {
                     width: 58%;
                     max-width: 807px;
-
-                        position: relative;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        width: 100%;
-                        height: 100%;
-                        margin-bottom: 20px;
-                        background-image: url(./images/academic.jpg);
-
                 }
+
+.projects .project-wrap .project-row .project-box.academic-container .image {
+                        background-image: url(./images/academic.jpg);
+                    }
 
 .projects .project-wrap .project-row .project-box.historic-container {
                     width: 38%;
@@ -521,3 +643,73 @@ ul {
 .projects .project-wrap .project-row .project-box.historic-container .image {
                         background-image: url(./images/historic.jpg);
                     }
+
+.projects .project-wrap .project-row .project-box.academic-container2 {
+                    width: 48%;
+                    max-width: 407px;
+                }
+
+.projects .project-wrap .project-row .project-box.academic-container2 .image {
+                        background-image: url(./images/StevenHollArchitects_IAS_WestEntry_WH.jpg);
+                    }
+
+.projects .project-wrap .project-row .project-box.historic-container2 {
+                    width: 48%;
+                    max-width: 407px;
+                }
+
+.projects .project-wrap .project-row .project-box.historic-container2 .image {
+                        background-image: url(./images/DSC_0041.jpg);
+                    }
+
+.projects .project-wrap .project-row .project-box.multifamily-container .image {
+                        background-image: url(./images/2_roeblinglofts_exteriorafter-1.jpg);
+                    }
+
+.projects .project-wrap[data-num="1"] .project-row {
+            max-width: 1430px;
+        }
+
+.projects .project-wrap[data-num="1"] .project-row .project-box {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                align-items: flex-start;
+                align-content: stretch;
+            }
+
+.projects .project-wrap[data-num="2"] {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 115px;
+    }
+
+.projects .project-wrap[data-num="2"] .project-row {
+            max-width: 930px;
+        }
+
+.projects .project-wrap[data-num="3"] .project-row {
+            width: 100%;
+            display: inline-block;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-items: flex-end;
+            align-content: stretch;
+        }
+
+.projects .project-wrap[data-num="3"] .project-row .project-box {
+                width: 58%;
+                max-width: 807px;
+            }
+
+.projects .project-wrap[data-num="3"] .button {
+            transform: translateY(-125px);
+        }
+
+.projects .project-wrap[data-num="3"] .button .icon {
+                color: #1f2a2a;
+            }

@@ -1,0 +1,53 @@
+.home-container {
+    margin-top: -170px;
+    overflow: hidden;
+    padding: 160px 120px;
+
+    .home-fill {
+        position: absolute;
+        left: 0;
+        top: 170px;
+        width: 70px;
+        height: 100%;
+        background-color: #fff;
+        z-index: 1;
+    }
+
+    .home-patterns {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+
+        .pattern {
+            position: absolute;
+            opacity: .15;
+        }
+        .pattern[data-num="1"] {
+            width: 965px;
+            right: -385px;
+            top: -145px;
+        }
+        .pattern[data-num="2"] {
+            width: 686px;
+            left: -240px;
+            top: -170px;
+        }
+    }
+
+    .content-container {
+        padding-top: 170px;
+    }
+
+    .col {
+        position: relative;
+        &.left {
+            width: 50%;
+        }
+
+        &.right {
+            width: 38%;
+        }
+    }
+}

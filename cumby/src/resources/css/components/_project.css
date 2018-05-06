@@ -1,6 +1,6 @@
 .project-container {
     padding: 0;
-    margin-top: -180px;
+    margin-top: -210px;
     z-index: 2;
 
     .button .icon {
@@ -29,6 +29,12 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-height: 768px) and (min-width: 1025px) {
+    .project-container {
+        margin-top: -180px;
     }
 }
 
@@ -105,16 +111,9 @@
 
         .project-row {
             position: relative;
-            max-width: 1430px;
 
             .project-box {
                 position: relative;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                justify-content: flex-end;
-                align-items: flex-start;
-                align-content: stretch;
 
                 .image-container {
                     position: relative;
@@ -125,18 +124,29 @@
                     margin-bottom: 20px;
                 }
 
+                p {
+                    font-size: 14px;
+                }
+
+                h3 {
+                    margin-bottom: 5px;
+                }
+
+                .image {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    position: relative;
+                    background-size: cover;
+                    background-position: center top;
+                    background-repeat: no-repeat;
+                }
+
                 &.academic-container {
                     width: 58%;
                     max-width: 807px;
-
-                        position: relative;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        width: 100%;
-                        height: 100%;
-                        margin-bottom: 20px;
+                    .image {
                         background-image: url("../images/academic.jpg");
-
+                    }
                 }
                 &.historic-container {
                     width: 38%;
@@ -145,6 +155,77 @@
                         background-image: url("../images/historic.jpg");
                     }
                 }
+                &.academic-container2 {
+                    width: 48%;
+                    max-width: 407px;
+                    .image {
+                        background-image: url("../images/StevenHollArchitects_IAS_WestEntry_WH.jpg");
+                    }
+                }
+                &.historic-container2 {
+                    width: 48%;
+                    max-width: 407px;
+                    .image {
+                        background-image: url("../images/DSC_0041.jpg");
+                    }
+                }
+                &.multifamily-container {
+                    .image {
+                        background-image: url("../images/2_roeblinglofts_exteriorafter-1.jpg");
+                    }
+                }
+            }
+        }
+    }
+
+    .project-wrap[data-num="1"] {
+        .project-row {
+            max-width: 1430px;
+            .project-box {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                align-items: flex-start;
+                align-content: stretch;
+            }
+        }
+    }
+
+    .project-wrap[data-num="2"] {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 115px;
+
+        .project-row {
+            max-width: 930px;
+        }
+    }
+
+    .project-wrap[data-num="3"] {
+
+        .project-row {
+            width: 100%;
+            display: inline-block;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-items: flex-end;
+            align-content: stretch;
+
+            .project-box {
+                width: 58%;
+                max-width: 807px;
+            }
+        }
+
+        .button {
+            transform: translateY(-125px);
+
+            .icon {
+                color: #1f2a2a;
             }
         }
     }
